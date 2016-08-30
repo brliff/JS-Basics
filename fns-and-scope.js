@@ -12,6 +12,8 @@ function isTyler(name){
     return false;
 }
 
+//G: Perfecto.
+
 //////////////////PROBLEM 2////////////////////
 
 
@@ -22,6 +24,8 @@ function isTyler(name){
 function getName() {
    return prompt('What is your name?');
 }
+
+//G: Perfecto.
 
 //////////////////PROBLEM 3////////////////////
 
@@ -36,6 +40,14 @@ function welcome(){
     alert('Welcome, ' + name);
 }
 
+//G: Perfecto.
+/*
+G: We COULD technically reduce this further if we wanted to:
+function welcome(){
+  alert('Welcome, ' + getName());
+}
+*/
+
 //////////////////PROBLEM 4////////////////////
 
 
@@ -44,6 +56,8 @@ function welcome(){
 //What is the difference between arguments and parameters?
 
   //Answer Here
+  
+  //G: When you get a minute, write down an answer here.
 
 
 //////////////////PROBLEM 5////////////////////
@@ -54,7 +68,8 @@ function welcome(){
 
 
   //Answer Here
-
+  
+  //G: When you get a minute, write down an answer here.
 
 
 //////////////////PROBLEM 6////////////////////
@@ -67,17 +82,18 @@ function welcome(){
 function myName(){
     return 'Brad Lifferth';
 }
-  
+//G: Perfecto.
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
 var newMyName = myName;
+//G: Perfecto.
 
 //Now alert the result of invoking newMyName
 alert('My name is ' + newMyName());
-
+//G: Perfecto.
 
 //////////////////PROBLEM 7////////////////////
 
@@ -90,11 +106,17 @@ function outerFn(){
     return myName;
 }
 
+//G: I see what you did here. Technically works, but doesn't fulfill the parameters of the question.
+//G: As long as you understand that you can return an unnamed (anonmyous) function though then you're all good.
+
+
 // function outerFn(){
 //     return function(){
 //         return 'Brad Lifferth';
 //     }
 // }
+
+//G: Oh hey, that's what I was looking for.
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
@@ -103,3 +125,5 @@ var innerFn = outerFn();
 
 //Now invoke innerFn.
 innerFn();
+
+//G: Looks good! Nice work. :) 
